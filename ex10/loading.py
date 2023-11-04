@@ -12,7 +12,7 @@ def get_percentage(i, m): return int(i * 100 / m)
 
 
 def symbolic_scale(scale): return ''.join(
-    ['=' if i != scale else '>' for i in range(1, scale)])
+    '=' if i != scale else '>' for i in range(1, scale))
 
 
 def get_estimated_time(

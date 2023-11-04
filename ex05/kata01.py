@@ -11,5 +11,4 @@ if __name__ == '__main__':
     kata = dict(Python='Guido van Rossum',
                 Ruby='Yukihiro Matsumoto', PHP='Rasmus Lerdorf')
     assert type(kata) is dict, 'the kata variable must be a dict of strings'
-    assert all([type(val) is str for val in kata.values()]
-               ), 'Tuple items must be strings'
+    assert all(type(val) is str for val in kata.values()), 'Tuple items must be strings'

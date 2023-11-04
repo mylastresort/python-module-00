@@ -12,7 +12,7 @@ def encode(text):
              'Y': '-.--', 'Z': '--..', '0': '-----', '1': '.----', '2': '..---',
              '3': '...--', '4': '....-', '5': '.....', '6': '-....', '7': '--...',
              '8': '---..', '9': '----.'}
-    return ' '.join([morse.get(letter.upper()) or '/' for letter in text])
+    return ' '.join(morse.get(letter.upper()) or '/' for letter in text)
 
 
 if __name__ == '__main__':

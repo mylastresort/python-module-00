@@ -17,10 +17,10 @@ def text_analyzer(arg=None):
 - %d punctuation mark(s)\n\
 - %d space(s)" % (
         len(arg),
-        sum([c.isupper() for c in arg]),
-        sum([c.islower() for c in arg]),
-        sum([c in string.punctuation for c in arg]),
-        sum([c.isspace() for c in arg])))
+        sum(c.isupper() for c in arg),
+        sum(c.islower() for c in arg),
+        sum(c in string.punctuation for c in arg),
+        sum(c.isspace() for c in arg)))
 
 
 if __name__ == "__main__":
